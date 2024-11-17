@@ -1,0 +1,279 @@
+/* Reset and basic styles */
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #F2F1EB;
+}
+
+@font-face {
+    font-family: 'chinese-piexl';
+    src: url('/Users/snape/Desktop/CSS-My Site/fonts/unifontex-font/Unifontexmono-AL3RA.ttf') format('truetype');
+}
+
+h1 {
+    margin: 0 auto;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 75px;
+    color: #0174BE;
+}
+
+h2 {
+    font-family: 'Handjet', sans-serif;
+    font-size: 35px;
+    color: #427D9D;
+}
+
+h3 {
+    font-family: 'Handjet', sans-serif;
+    color: #427D9D;
+    font-size: 30px;
+}
+
+p {
+    cursor: default;
+    font-family: 'Handjet', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+hr {
+    border: dotted 6px;
+    border-bottom: none;
+    color: #acacac;
+    width: 20px;
+    margin: 100px auto 100px;
+}
+
+/* Top container styles */
+.top-container {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 44%;
+    text-align: center;
+    background-color: #9db3e5;
+}
+
+.cloud1 {
+    position: absolute;
+    max-block-size: 13%;
+    right: 18%;
+    top: 10%;
+}
+
+.cloud2 {
+    position: absolute;
+    max-block-size: 13%;
+    left: 16%;
+    bottom: 36%;
+}
+
+.ground {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+}
+
+.intro {
+    color: #ffffff;
+}
+
+/* Middle container styles */
+.middle-container {
+    width: 50vw;
+    margin: auto;
+}
+
+.profile p {
+    margin: auto 10%;
+}
+
+.sculpture {max-block-size: 175px; margin-top: 18%; margin-bottom: 2%;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills h2 {
+    font-family: 'Pixelify Sans', sans-serif;
+   
+    margin:auto 25% 12% 25% ;
+    background-color: #bbd6fb;
+    color: #FBF6EE;
+}
+
+.photography,
+.video-editing,
+.web-developer {
+    text-align: left;
+    margin: 70px auto;
+}
+
+.skills-photography {    
+    width: 8%;
+    position: absolute;
+    left: 25%;
+    float: left;
+}
+
+.skills-video-editing {   
+    width: 9%;
+    position: absolute;
+    right: 25%;
+    float: right;
+}
+
+.skills-web-developer {
+    width: 7%;
+    position: absolute;
+    left: 25%;
+    float: left;
+}
+
+.photography-description,
+.web-developer-description {
+    margin-left: 24%;
+}
+.video-description {
+    margin-right: 24%;
+}
+
+/* Contact section styles */
+.contact-me-h2 {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+.contact-me-description {
+    margin: 60px auto 40px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* 容器样式 */
+.btn-container {
+    display: flex;            /* 使用 Flexbox 布局 */
+    flex-direction: column;   /* 按钮竖直排列 */
+    align-items: center;      /* 水平居中 */
+    justify-content: center;  /* 垂直居中 */
+    height: 20vh;            /* 容器高度为 100% 视口高度 */
+}
+/* 按钮样式 */
+.btn {
+    background: #607274;
+    background-image: -webkit-linear-gradient(top, #607274, #607274);
+    background-image: -moz-linear-gradient(top, #607274, #607274);
+    background-image: -ms-linear-gradient(top, #607274, #607274);
+    background-image: -o-linear-gradient(top, #607274, #607274);
+    background-image: linear-gradient(to bottom, #607274, #607274);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Handjet', sans-serif;
+    color: #FBF6EE;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px 0;  /* 添加间距，使按钮之间不紧密 */
+}
+
+.btn:hover {
+    background: #B6C4B6;
+    background-image: -webkit-linear-gradient(top, #B6C4B6, #B6C4B6);
+    background-image: -moz-linear-gradient(top, #B6C4B6, #B6C4B6);
+    background-image: -ms-linear-gradient(top, #B6C4B6, #B6C4B6);
+    background-image: -o-linear-gradient(top, #B6C4B6, #B6C4B6);
+    background-image: linear-gradient(to bottom, #B6C4B6, #B6C4B6);
+    text-decoration: none;
+}
+
+/* Bottom container styles */
+.bottom-container {
+    background-color: #9db3e5;
+    padding: 40px 0 10px;
+}
+
+.link-container p {
+    display: inline-block;
+    margin: 0 25px;
+    color: #FBF6EE;
+    letter-spacing: 1px;
+}
+
+.bilibili-link,
+.instagram-link,
+.red-link {
+    text-decoration: none;
+    color: #FBF6EE;
+}
+
+.bilibili-link:hover,
+.instagram-link:hover,
+.red-link:hover {
+    color: #0766AD;
+}
+
+.hover-link {
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Handjet', sans-serif;
+    text-decoration: none;
+    color: #FBF6EE;
+}
+
+.hover-link-chinese{    
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'chinese-piexl';
+    text-decoration: none;
+    color: #FBF6EE;
+    font-size: 18px;
+}
+
+.hover-link:hover,
+.hover-link-chinese:hover {
+    color: #0766AD;
+}
+
+/* ID selector styles */
+#Pre {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #FBF6EE;
+    color: #9db3e5;
+    border-radius: 8px;
+}
+
+#hand {
+    align-self: center;
+}
+
+/* Animation styles */
+@keyframes floatUp {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+}
+
+@keyframes floatDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(11px);
+    }
+}
+
+.cloud1 {
+    animation: floatUp 2.9s infinite alternate;
+}
+
+.cloud2 {
+    animation: floatDown 3.1s infinite alternate;
+}

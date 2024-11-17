@@ -1,0 +1,8 @@
+<%- include('partials/header'); -%>
+
+<h1><%=showTitle %></h1>
+<p id="postAuthor">来自「<strong><%= nickname %></strong>」的留言
+<br><%= new Date(timestamp).toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }) %></p>
+<p><%=showContent %></p>
+<a class="btn btn-outline-success btn-md" href="/" role="button">回到首页</a>
+<%- include('partials/footer'); -%>

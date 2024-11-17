@@ -1,0 +1,39 @@
+<%- include('partials/header'); -%>
+
+<h3>写点什么吧。🥰</h3>
+
+<form action="/compose" method="POST">
+    <div class="form-group">
+        <label for="nickname" class="label">🫶🏻 昵称 Nickname 🫶🏻</label>
+        <input type="text" class="form-control" id="nickname" name="nickname" placeholder="love from ____." >
+    </div>
+    <div class="form-group">
+        <label for="postTitle" class="label">🔖 标题 Title 🔖</label>
+        <input type="text" class="form-control" id="postTitle" name="postTitle" maxlength="30" required>
+    </div>
+    <div class="form-group">
+        <label for="postBody" class="label">📝 内容 Content 📝</label>
+        <textarea class="form-control" id="postBody" name="postBody" rows="5" maxlength="1000" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-success" id="postSubmitBtn">提交</button>
+</form>
+
+<% if (error) { %>
+    <div id="customAlert" class="custom-alert">
+        <div class="custom-alert-content">
+            <img src="/images/alert.png" alt="No Name" class="alert-img">
+            <p>不写名字，我就不知道是谁的留言了。<button id="closeAlert">关闭</button></p>
+            
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("customAlert").style.display = "block";
+        
+        document.getElementById("closeAlert").addEventListener("click", function() {
+            document.getElementById("customAlert").style.display = "none";
+        });
+    </script>
+<% } %>
+
+<%- include('partials/footer'); -%>
